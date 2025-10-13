@@ -3,21 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress Steps</title>
+    <title>Rotating Navigation</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <div class="progress-container">
-            <div class="progress" id="progress"></div>
-            <div class="circle active">1</div>
-            <div class="circle">2</div>
-            <div class="circle">3</div>
-            <div class="circle">4</div>
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
-        <button class="btn" id="prev" disabled>Prev</button>
-        <button class="btn" id="next">Next</button>
+        <div class="content">
+            <h1>R&R ShutterWorks</h1>
+            <small>Tushar Kanti Mishra</small>
+            <p><strong>R&R ShutterWorks</strong> was born from a simple belief — that every moment has a story worth preserving. What started as a passion for capturing authentic emotion and fleeting beauty has evolved into a creative studio dedicated to timeless, impactful photography.</p>
+            <p>We see photography as more than just taking pictures. It’s about seeing — noticing the subtle interplay of light, expression, and atmosphere that defines a moment. Whether it’s an intimate portrait, a grand celebration, or the quiet power of nature, we aim to capture it with honesty and artistry.</p>
+            <p>At <strong>R&R ShutterWorks</strong>, we specialize in:
+                <ul>
+                    <li><strong>Portrait Photography</strong></li>
+                    <li><strong>Event Photography</strong></li>
+                    <li><strong>Landscape Photography</strong></li>
+                </ul>
+            </p>
+            <p>Our philosophy is simple: <strong><em>real moments, refined results.</em></strong></p>
+            <p>Every image we create is guided by precision, creativity, and heart — so what you remember isn’t just how it looked, but how it felt.</p>
+            <p>Because at R&R ShutterWorks, we don’t just take photographs — <strong>we craft memories that last.</strong></p>
+            <h3>One of our notable clicks</h3>
+            <img src="110820242041_0038.jpg" alt="Orange Flower" />
+        </div>
     </div>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-user-alt"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
     <script src="script.js"></script>
 </body>
 </html>
