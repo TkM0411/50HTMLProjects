@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Greeting
+        run: echo "This is my first GitHub Actions Workflow."
+      - name: ExitStep
+        run: echo "Exiting the workflow."
